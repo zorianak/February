@@ -1,0 +1,682 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background: #fff;
+	font-family: 'Myriad Pro', Verdana, 'Century Gothic', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+font-weight: normal;
+color: #66CCCC;
+font-size: 300%;
+margin: 0;
+padding: 0;
+}
+
+h2 {
+font-weight: normal;
+font-size: 110%;
+margin: 0;
+padding: 0;
+}
+
+h3 {
+font-weight: normal;
+padding-left: 2.5em;
+font-size: 150%;
+}
+
+h4 {
+margin-bottom: none;
+margin-top:1.5em;
+}
+
+a img {
+border: none;
+}
+
+
+a {
+	color: #0066CC;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #003399;
+	text-decoration: underline;
+}
+
+
+.logo {
+	text-align: center;
+	background: url(http://belinkddesign.com/images/logobg.png) top center no-repeat;
+	margin-top: -10px; /*Browser Fix*/
+	padding-top: 50px;
+margin-bottom: 1.5em;
+}
+
+/* Menu Styles */
+
+.menucontainer {
+margin-left: 25px;
+}
+
+.nav{
+     margin:0 auto;
+     padding-top: 14px;
+     height:51px;
+     display:block;
+     background:url(http://belinkddesign.com/images/menubg.png) top center no-repeat;
+}
+
+.nav ul {
+margin: 0;
+}
+
+.nav li{
+     list-style:none;
+     display:inline;
+}
+
+.nav li a{
+     float:left;
+     padding-left:15px;
+     display:block;
+     color:#000;
+     text-decoration:none;
+     font:12px Verdana, Arial, Helvetica, sans-serif;
+     cursor:pointer;
+	 text-indent: -9999em;
+	 overflow: hidden;
+margin-left: 50px;
+	 }
+
+.nav li a span{
+     line-height:30px;
+     float:left;
+     display:block;
+     padding-right:15px;
+     background:url('topMenuImages.png') 100% -30px no-repeat;}
+
+.nav li a:hover{
+     background-position:0px -60px;
+     color:#333;
+}
+
+.nav li a:hover span{
+    background-position:100% -60px;}
+
+.nav li a.active, .menu li a.active:hover{
+     line-height:30px;
+     font:12px Verdana, Arial, Helvetica, sans-serif;
+     background:url('topMenuImages.png') 0px -90px no-repeat;
+     color:rgb(255,255,255);}
+
+.nav li a.active span, .menu li a.active:hover span{
+    background:url('topMenuImages.png') 100% -90px no-repeat;
+    }
+	
+/*Styling of individual menu items */
+
+#home {
+	background: url(http://belinkddesign.com/images/home.png);
+	width: 65px;
+	height: 51px;
+	 }
+	
+#home.active {
+	background: url(http://belinkddesign.com/images/home.png) -70px 0;
+	}
+
+#home:hover { 
+	background: url(http://belinkddesign.com/images/home.png) -83px 0 !important; 
+}
+
+#about {
+	background: url(http://belinkddesign.com/images/about.png);
+	width: 55px;
+	height: 51px;
+	 }
+	
+#about.active {
+	background: url(http://belinkddesign.com/images/about.png) -70px 0;
+	}
+
+#about:hover { 
+	background: url(http://belinkddesign.com/images/about.png) -86px 0 !important; 
+}
+
+#blog {
+	background: url(http://belinkddesign.com/images/blog.png);
+	width: 45px;
+	height: 51px;
+	 }
+	
+#blog.active {
+	background: url(http://belinkddesign.com/images/blog.png) -70px 0;
+	}
+
+#blog:hover { 
+	background: url(http://belinkddesign.com/images/blog.png) -80px 0 !important; 
+}
+
+	
+
+#contact {
+	background: url(http://belinkddesign.com/images/contact.png);
+	width: 60px;
+	height: 51px;
+	 }
+	 
+#contact:hover { 
+	background: url(http://belinkddesign.com/images/contact.png) -95px 0 !important; }
+	
+#contact.active {
+	background: url(http://belinkddesign.com/images/contact.png) -60px 0;
+	}
+
+#portfolio {
+	background: url(http://belinkddesign.com/images/portfolio.png);
+	width: 70px;
+	height: 51px;
+	 }
+	 
+#portfolio:hover { 
+	background: url(http://belinkddesign.com/images/portfolio.png) -97px 0 !important; }
+	
+#portfolio.active {
+	background: url(http://belinkddesign.com/images/portfolio.png) -80px 0;
+	}
+	
+#resources {
+	background: url(http://belinkddesign.com/images/resources.png);
+	width: 80px;
+	height: 51px;
+	 }
+	 
+#resources:hover { 
+	background: url(http://belinkddesign.com/images/resources.png) -102px 0 !important; }
+	
+#resources.active {
+	background: url(http://belinkddesign.com/images/resources.png) -110px 0;
+	}
+	
+/*.nav:hover li a#home { background-position: -170px; }
+.nav:hover li a#contact { background-position: -186px; }
+.nav:hover li a#portfolio { background-position: -195px; }
+.nav:hover li a#resources { background-position: -202px; } 
+.nav:hover li a#blog { background-position: -174px; } 
+.nav:hover li a#about { background-position: -179px; }*/
+
+
+
+/* Content Styling */
+
+.contents {
+	background:url(http://belinkddesign.com/images/bodybg.png) top center no-repeat;
+float:left;
+padding-top: 3em;
+margin-left: -10px;
+}
+
+.contents a {
+	color: #0066CC;
+	text-decoration: none;
+}
+
+.contents a:hover {
+	color: #003399;
+	text-decoration: underline;
+}
+
+.welcome {
+text-align: center;
+padding-top: 2em;
+}
+
+.outerrecent {
+	background: url(http://belinkddesign.com/images/recentpostsbg.png) repeat-x #fff;
+	padding: 0 3px;
+}
+
+.recentwork {
+	background: url(http://belinkddesign.com/images/recentworkbg.png) repeat;
+    min-height: 200px;
+    margin-top: -23px;
+}
+
+.recentwork h3 {
+	border-bottom: 2px solid #9dd7ff;
+	margin-right: 3em;
+	margin-left: .5em;
+	padding-left: 1em;
+	padding-top: 15px;
+}
+
+.recentimage {
+    float:left;
+    width: 320px;
+    border-right: 1px solid #E9F3FA;
+    margin-right: .7em;
+}
+
+.recentdescription {
+    padding-top: .5em;
+}
+
+
+
+.about {
+border-bottom: 1px solid #E9F3FA;
+}
+
+.contents {
+width: 100%;
+}
+
+
+/*Form*/
+
+.myform{
+width:400px;
+padding:14px;
+}
+
+.myform h4 {
+text-align: center;
+}
+
+.contactbox {
+	margin: 0 auto;
+}
+
+.topImage /*will contain the top image */ {
+	top: 0px;
+width:400px;
+}
+
+.bottomImage /*will contain the bottom image */ {
+	bottom: 0px;
+width:400px;
+}
+
+/* ----------- stylized ----------- */
+
+#stylized{
+border:solid 2px #E9F3FA;
+margin-top:25px;
+margin-bottom: 50px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#stylized h1 {
+font-size:14px;
+font-weight:bold;
+margin-bottom:8px;
+}
+
+#stylized p{
+font-size:11px;
+color:#666666;
+margin-bottom:20px;
+border-bottom:solid 1px #E9F3FA;
+padding-bottom:10px;
+}
+
+#stylized label{
+display:block;
+font-weight:bold;
+text-align:right;
+width:140px;
+float:left;
+}
+
+#stylized .small{
+color:#666666;
+display:block;
+font-size:11px;
+font-weight:normal;
+text-align:right;
+width:140px;
+}
+
+#stylized input{
+float:left;
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #E9F3FA;
+width:200px;
+margin:2px 0 20px 10px;
+}
+
+#stylized input:focus {
+background-color: #eee;
+border: 1px solid #000;
+color: #000;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+#stylized button{
+clear:both;
+margin-left:150px;
+width:125px;
+height:31px;
+background:#3684AF url(http://belinkddesign.com/images/button.png) no-repeat;
+text-align:center;
+line-height:31px;
+color:#FFFFFF;
+font-size:11px;
+font-weight:bold;
+margin-top: 1em;
+}
+
+#stylized textarea {
+		float:left;
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #E9F3FA;
+width:200px;
+margin:2px 0 20px 10px;
+}
+
+
+/*Portfolio Crap */
+
+#design {
+	clear: right;
+	padding: 1em;
+	margin: 10px 0;
+}
+
+#design a img {
+	border: none;
+}
+
+#design img {
+	float: left;
+	margin: 0 10px;
+}
+
+#design2 {
+	clear: right;
+	padding: 1em;
+	margin: 10px 0;
+}
+
+#design2 a img {
+	border: none;
+}
+
+#design2 img {
+	float: left;
+	margin: 0 10px;
+}
+
+#design3 {
+	clear: right;
+	padding: 1em;
+	margin: 10px 0;
+}
+
+#design3 a img {
+	border: none;
+}
+
+#design3 img {
+	float: left;
+	margin: 0 10px;
+}
+
+#design-bottom {
+	clear: both; 
+}
+
+#design4 {
+	clear: right;
+	padding: 1em;
+	margin: 10px 0;
+}
+
+#design4 a img {
+	border: none;
+}
+
+#design4 img {
+	float: left;
+	margin: 0 10px;
+}
+
+#design5 {
+	clear: right;
+	padding: 1em;
+	margin: 10px 0;
+}
+
+#design5 a img {
+	border: none;
+}
+
+#design5 img {
+	float: left;
+	margin: 0 10px;
+}
+
+#design-bottom {
+	clear: both; 
+}
+
+
+
+
+#free1 {
+	clear: right;
+	padding: 1em;
+	margin: 10px 0;
+}
+
+#free1 a img {
+	border: none;
+}
+
+#free1 img {
+	float: left;
+	margin: 0 10px;
+}
+
+#free2 {
+	clear: right;
+	padding: 1em;
+	margin: 10px 0;
+}
+
+#free2 a img {
+	border: none;
+}
+
+#free2 img {
+	float: left;
+	margin: 0 10px;
+}
+
+#free3 {
+	clear: right;
+	padding: 1em;
+	margin: 10px 0;
+}
+
+#free3 a img {
+	border: none;
+}
+
+#free3 img {
+	float: left;
+	margin: 0 10px;
+}
+
+#free4 {
+	clear: right;
+	padding: 1em;
+	margin: 10px 0;
+}
+
+#free4 a img {
+	border: none;
+}
+
+#free4 img {
+	float: left;
+	margin: 0 10px;
+}
+
+
+#print {
+	clear: right;
+	padding: 1em;
+	margin: 10px 0;
+}
+
+#print a img {
+	border: none;
+}
+
+#print img {
+	float: left;
+	margin: 0 10px;
+}
+
+#print2 {
+	clear: right;
+	padding: 1em;
+	margin: 10px 0;
+}
+
+#print2 a img {
+	border: none;
+}
+
+#print2 img {
+	float: left;
+	margin: 0 10px;
+}
+
+#print3 {
+	clear: right;
+	padding: 1em;
+	margin: 10px 0;
+}
+
+#print3 a img {
+	border: none;
+}
+
+#print3 img {
+	float: left;
+	margin: 0 10px;
+}
+
+.topslides {
+     color: #B5CFDF;
+}
+
+.topslides a {
+    color: #3684AF;
+    text-decoration:none;
+}
+
+.sliderlinks {
+     color: #B5CFDF;
+     padding-right: 1em;
+}
+
+.sliderlinks a {
+    color: #3684AF;
+    text-decoration:none;
+}
+
+.portfolio h2 {
+   border-bottom: 1px solid #B5CFDF;
+   font-weight:bold;
+   color: #3684AF;
+}
+
+
+.posts {
+
+}
+
+.posting h3 {
+	padding-top: 0;
+	margin-top: 0;
+	border-bottom: 1px solid #CEE5F3;
+}
+
+.posting img {
+      padding: 10px;
+}
+
+#posting {
+margin-left: 240px;
+float:left;
+width: 700px;
+}
+
+.postmetadata {
+margin-bottom: 4em;
+}
+
+#menu {
+width: 220px;
+float:left;
+}
+
+#sidebar a {
+	color: #0066CC;
+	text-decoration: none;
+	}
+
+.frontpost {
+	float:left;
+}
+
+.textwidget {
+     margin-top: 1.5em;
+     margin-bottom: 1.5em;
+}
+
+.commentlist {
+     list-style-type: none;
+}
+
+.commentlist li {
+     padding: .5em;
+     padding-top: 1.5em;
+     border-bottom: 1px solid #CEE5F3;
+}
+
+.bypostauthor {
+     background-color: #EDF6FB;
+}
+
+.comment-author{
+     width: 150px;
+     padding: 10px;
+     float: left;
+     border: 1px solid #eee;
+     margin-right: .5em;
+}
+
+.comment-author span {
+}
+
+
+
+/*footer CSS */
+
+.feet {
+     background: url(http://belinkddesign.com/images/feetbg.png) bottom center nrepeat-x;
+     width: 100%;
+     margin-bottom: 1em;
+     border-top: 1px solid #CEE5F3;
+}
